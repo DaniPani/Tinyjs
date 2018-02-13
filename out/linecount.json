@@ -1,0 +1,149 @@
+{
+    "extension": "linecount",
+    "version": "0.1.7",
+    "workspace": "c:\\Users\\danie\\Google Drive\\Projects WebSites\\Tinyjs",
+    "linecount": [
+        {
+            "version": "0.1.7",
+            "counttime": "2018-02-13 22:11:45",
+            "filesum": 22,
+            "codesum": 7999,
+            "commentsum": 6,
+            "blanksum": 47,
+            "filelist": [
+                {
+                    "blank": 19,
+                    "code": 45,
+                    "comment": 5,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\tiny.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 60,
+                    "comment": 0,
+                    "filename": "gulpfile.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 7677,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 27,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 11,
+                    "code": 45,
+                    "comment": 1,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\components\\addClass.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\components\\allClass.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "src\\components\\css.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "src\\components\\height.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "src\\components\\hide.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\components\\on.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\components\\removeClass.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "src\\components\\show.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "src\\components\\text.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "src\\components\\val.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "src\\components\\width.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\core.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "src\\helpers\\style.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "src\\helpers\\undefined.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 18,
+                    "comment": 0,
+                    "filename": "test\\html\\test.html"
+                },
+                {
+                    "blank": 11,
+                    "code": 73,
+                    "comment": 0,
+                    "filename": "test\\test.js"
+                }
+            ]
+        }
+    ]
+}

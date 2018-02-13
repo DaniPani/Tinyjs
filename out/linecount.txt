@@ -1,0 +1,34 @@
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2018-02-13 22:11:45
+count workspace : c:\Users\danie\Google Drive\Projects WebSites\Tinyjs
+total files : 22
+total code lines : 7999
+total comment lines : 6
+total blank lines : 47
+
+.gitignore, code is 45, comment is 5, blank is 19.
+dist\tiny.js, code is 1, comment is 0, blank is 0.
+gulpfile.js, code is 60, comment is 0, blank is 4.
+package-lock.json, code is 7677, comment is 0, blank is 0.
+package.json, code is 27, comment is 0, blank is 0.
+README.md, code is 45, comment is 1, blank is 11.
+src\components\addClass.js, code is 4, comment is 0, blank is 0.
+src\components\allClass.js, code is 3, comment is 0, blank is 0.
+src\components\css.js, code is 1, comment is 0, blank is 0.
+src\components\height.js, code is 1, comment is 0, blank is 0.
+src\components\hide.js, code is 8, comment is 0, blank is 0.
+src\components\on.js, code is 3, comment is 0, blank is 0.
+src\components\removeClass.js, code is 4, comment is 0, blank is 0.
+src\components\show.js, code is 8, comment is 0, blank is 0.
+src\components\text.js, code is 1, comment is 0, blank is 0.
+src\components\val.js, code is 1, comment is 0, blank is 0.
+src\components\width.js, code is 1, comment is 0, blank is 0.
+src\core.js, code is 9, comment is 0, blank is 0.
+src\helpers\style.js, code is 1, comment is 0, blank is 0.
+src\helpers\undefined.js, code is 8, comment is 0, blank is 0.
+test\html\test.html, code is 18, comment is 0, blank is 2.
+test\test.js, code is 73, comment is 0, blank is 11.
+===============================================================================

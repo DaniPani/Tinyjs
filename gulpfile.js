@@ -10,7 +10,7 @@ const beautify = require('gulp-beautify');
 components = {
     'addClass': 'src/components/addClass.js',
     'removeClass': 'src/components/removeClass.js',
-    'hasClass': 'src/components/hasClass.js',
+    'allClass': 'src/components/allClass.js',
     'on': 'src/components/on.js',
     'text': 'src/components/text.js',
     'val': 'src/components/val.js',

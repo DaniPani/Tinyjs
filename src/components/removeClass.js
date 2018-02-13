@@ -1,4 +1,4 @@
 $.removeClass = (classes) => {
-    $.selector.classList.remove(classes.split(' ').map(v => v.replace(' ', '')))
+    classes.forEach(element => $.selector.classList.remove(element))
     return $
 }

@@ -1,4 +1,4 @@
 $.addClass = classes => {
-    $.selector.classList.add(classes.split(' ').map(v => v.replace(' ', '')))
+    classes.forEach(element => $.selector.classList.add(element))
     return $
 }
