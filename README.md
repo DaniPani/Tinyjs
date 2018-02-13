@@ -16,7 +16,7 @@ I wanted something smaller and smarter than Jquery and this how Tinyjs was born.
 
 ## Why Tinyjs?
 
-- Insanly small (**~1040Kb**)
+- Insanly small (**~985 bytes**)
 - Fast
 - Doesn't slow down the loading page
 - [It's super modular](#components)
@@ -54,4 +54,21 @@ $.all('element')
 You can get plain html with `$.selector`
 ```javascript
 $.one('element').selector
+```
+
+## Components
+You can simply add class to your element:
+- `addClass(class)`:
+```javascript
+$.one('element').addClass(['class']) //(work also with list of class)
+```
+Or remove a class:
+- `removeClass(class)`:
+```javascript
+$.one('element').removeClass(['class','class2'])
+```
+And return all classes:
+- `allClass()`:
+```javascript
+$.one('element').allClass() //expected [""]
 ```
