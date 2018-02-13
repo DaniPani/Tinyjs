@@ -32,7 +32,7 @@ $ npm install danipani-tinyjs --save
 If you prefer using Yarn:
 
 ```console
-$ yarn save add danipani-tinyjs
+Soon
 ```
 
 Or via CDN:
@@ -71,4 +71,17 @@ And return all classes:
 - `allClass()`:
 ```javascript
 $.one('element').allClass() //expected [""]
+```
+Read or set text of a element:
+- `text(text)`:
+```javascript
+$.one('element').text('Hello World')
+$.one('element').text() //expected 'Hello World'
+```
+
+Also for value:
+- `val(value)`:
+```javascript
+$.one('element').val('Hello World')
+$.one('element').val() //expected 'Hello World'
 ```
