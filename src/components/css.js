@@ -1,0 +1,1 @@
+$.css = (read, set) => $.undefined(set, $.style(read), () => $.selector.style[read] = set)

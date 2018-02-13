@@ -1,0 +1,1 @@
+$.style = property => window.getComputedStyle($.selector, null).getPropertyValue(property)

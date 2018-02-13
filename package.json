@@ -1,0 +1,27 @@
+{
+  "name": "tinyjs",
+  "version": "1.0.0",
+  "description": "A Jquery alternative very small",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "gulp --a"
+  },
+  "author": "Daniel Panero",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-beautify": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-print": "^5.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglify-es": "^1.0.0",
+    "gulp-util": "^3.0.8",
+    "jest": "^22.2.2",
+    "minimist": "^1.2.0",
+    "puppeteer": "^1.0.0",
+    "uglify-es": "^3.3.10"
+  }
+}

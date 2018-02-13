@@ -1,0 +1,1 @@
+$.text = text => $.undefined(text, $.selector.innerText, () => $.selector.innerText = text)

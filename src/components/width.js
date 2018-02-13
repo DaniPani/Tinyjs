@@ -1,0 +1,1 @@
+$.width = width => $.undefined(width, $.style(width), () => $.selector.style['width'] = width)
