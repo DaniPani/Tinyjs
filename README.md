@@ -16,7 +16,7 @@ I wanted something smaller and smarter than Jquery and this how Tinyjs was born.
 
 ## Why Tinyjs?
 
-- Insanly small (**~1040kb**)
+- Insanly small (**~1040Kb**)
 - Fast
 - Doesn't slow down the loading page
 - [It's super modular](#components)
@@ -40,9 +40,18 @@ Or via CDN:
 Soon
 ```
 ### Find elements
-Search for the first element
+Search for the first element (work with class/id/properties/...)
 ```javascript
 $.one('element')
 ```
 
 (You can find out more on https://developer.mozilla.org/it/docs/Web/API/Document/querySelector)
+Search for all elements, which match with the selector
+```javascript
+$.all('element')
+```
+### Plain html
+You can get plain html with `$.selector`
+```javascript
+$.one('element').selector
+```
