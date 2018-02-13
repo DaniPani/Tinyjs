@@ -1,4 +1,4 @@
 $.addClass = classes => {
-    classes.forEach(element => $.selector.classList.add(element))
+    Array.from(classes).forEach(element => $.selector.classList.add(element))
     return $
 }
