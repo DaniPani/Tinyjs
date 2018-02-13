@@ -1,4 +1,8 @@
 $.removeClass = (classes) => {
-    Array.from(classes).forEach(element => $.selector.classList.remove(element))
+    if (typeof classes == 'array') {
+        Array.from(classes).forEach(element => $.selector.classList.remove(element))
+    } else {
+        $.selector.classList.remove(classes)
+    }
     return $
 }
