@@ -1,4 +1,5 @@
 $ = {}
+$.listener = {}
 $.one = (selector) => {
     $.selector = document.querySelector(selector)
     return $
