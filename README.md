@@ -45,7 +45,7 @@ Search for the first element (work with class/id/properties/...)
 $.one('element')
 ```
 
-(You can find out more on https://developer.mozilla.org/it/docs/Web/API/Document/querySelector)
+(You can find out more on https://developer.mozilla.org/it/docs/Web/API/Document/querySelector)  
 Search for all elements, which match with the selector
 ```javascript
 $.all('element')
@@ -85,3 +85,43 @@ Also for value:
 $.one('element').val('Hello World')
 $.one('element').val() //expected 'Hello World'
 ```
+
+Event Listener:
+- `on(type, listener)`:
+```javascript
+$.one('element').on('click', e = > {...})
+```
+- `once(type, listener)`:
+```javascript
+$.one('element').once('click', e = > {...})
+```
+- `off(type)`:
+```javascript
+$.one('element').off('click')
+```
+
+Height/Width:
+- `height(value)/width(value)`:
+```javascript
+$.one('element').height('12px')
+$.one('element').width() //expect to return the width
+```
+
+You can also get or set css properties:
+- `css(property, value)/css(property)`:
+```javascript
+$.one('element').css('color', 'red')
+$.one('element').css('color') //expected rgb(255, 0, 0)
+```
+
+And finally show or hide method:
+- `show(type)/hide(type)`:
+```javascript
+$.one('element').hide(true) // affect the visibility
+$.one('element').show(false) // affect the display property
+```
+
+## Helpers
+To minimize the code I used two helpers:
+- `undefined(var,callback, callback2)` check if var is undefined and it call the right callback
+- `style(property)` return the value of the css property
