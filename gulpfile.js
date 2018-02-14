@@ -12,6 +12,7 @@ components = {
     'removeClass': 'src/components/removeClass.js',
     'allClass': 'src/components/allClass.js',
     'on': 'src/components/on.js',
+    'once': 'src/components/once.js',
     'off': 'src/components/off.js',
     'text': 'src/components/text.js',
     'val': 'src/components/val.js',
