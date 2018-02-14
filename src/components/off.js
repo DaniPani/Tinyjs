@@ -1,3 +1,3 @@
-$.off = (handler, callback) => {
-    $.selector.removeEventListener(handler, $.listener[handler])
+$.off = (handler) => {
+    $.selector.removeEventListener(handler, $.listener[$.selector][handler])
 }
