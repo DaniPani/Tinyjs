@@ -45,7 +45,7 @@ Search for the first element (work with class/id/properties/...)
 $.one('element')
 ```
 
-(You can find out more on https://developer.mozilla.org/it/docs/Web/API/Document/querySelector)
+(You can find out more on https://developer.mozilla.org/it/docs/Web/API/Document/querySelector)  
 Search for all elements, which match with the selector
 ```javascript
 $.all('element')
@@ -84,4 +84,18 @@ Also for value:
 ```javascript
 $.one('element').val('Hello World')
 $.one('element').val() //expected 'Hello World'
+```
+
+Event Listener:
+- `on(type, listener)`:
+```javascript
+$.one('element').on('click', e = > {...})
+```
+- `once(type, listener)`:
+```javascript
+$.one('element').once('click', e = > {...})
+```
+- `off(type)`:
+```javascript
+$.one('element').off('click')
 ```
