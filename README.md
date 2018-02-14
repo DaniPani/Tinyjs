@@ -16,7 +16,7 @@ I wanted something smaller and smarter than Jquery and this how Tinyjs was born.
 
 ## Why Tinyjs?
 
-- Insanly small (**~985 bytes**)
+- Insanly small (**~1375 bytes**)
 - Fast
 - Doesn't slow down the loading page
 - [It's super modular](#components)
@@ -125,3 +125,9 @@ $.one('element').show(false) // affect the display property
 To minimize the code I used two helpers:
 - `undefined(var,callback, callback2)` check if var is undefined and it call the right callback
 - `style(property)` return the value of the css property
+
+## Plugin
+We love plugin therefore it's a piece of cake create one 😄
+```javascript
+$.name = (arg1, arg2, ..) => {...} // you can access to $.selector and $.listener (list of all listener), if you want concatenate fucntion simply add return $
+```
