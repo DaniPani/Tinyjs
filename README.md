@@ -50,6 +50,13 @@ Search for all elements, which match with the selector
 ```javascript
 $.all('element')
 ```
+
+### Variable
+To assign to something you have to use `save()` method
+```javascript
+const element = $.one('element').save()
+```
+
 ### Plain html
 You can get plain html with `$.selector`
 ```javascript
