@@ -20,7 +20,7 @@ components = {
     'height': 'src/components/height.js',
     'show': 'src/components/show.js',
     'hide': 'src/components/hide.js',
-    'css': 'src/components/css.js'
+    'css': 'src/components/css.js',
 }
 
 helpers = {
