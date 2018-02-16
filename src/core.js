@@ -9,3 +9,6 @@ $.all = (selector) => {
     $.selector = document.querySelectorAll(selector)
     return $
 }
+$.save = () => {
+    return Object.assign({}, $)
+}
