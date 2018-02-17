@@ -6,6 +6,7 @@ const minimist = require('minimist')(process.argv.slice(2))
 const gif = require('gulp-if')
 const uglify = require('gulp-uglify-es').default;
 const beautify = require('gulp-beautify');
+const babel = require('gulp-babel')
 
 components = {
     'addClass': 'src/components/addClass.js',
@@ -31,36 +32,36 @@ helpers = {
 src = ['src/core.js']
 
 gulp.task('default', () => {
-    if (typeof minimist.all !== 'undefined' || typeof minimist.a !== 'undefined') {
-        for (const iterator in components) {
-            src.push(components[iterator])
-        }
-        for (const iterator in helpers) {
-            src.push(helpers[iterator])
-        }
-    }
-    if (typeof minimist.modules !== 'undefined' || typeof minimist.m !== 'undefined') {
-        modules = minimist.modules || minimist.m
-        modules = modules.split('\,')
-        for (const iterator of modules) {
-            if (iterator == 'text' || iterator == 'val' || iterator == 'css' || iterator == 'height' || iterator == 'width') {
-                if (!src.includes(helpers['undefined'])) {
-                    src.push(helpers['undefined'])
+            if (typeof minimist.all !== 'undefined' || typeof minimist.a !== 'undefined') {
+                for (const iterator in components) {
+                    src.push(components[iterator])
+                }
+                for (const iterator in helpers) {
+                    src.push(helpers[iterator])
                 }
             }
-            if (iterator == 'css' || iterator == 'height'|| iterator == 'width') {
-                if (!src.includes(helpers['style'])) {
-                    src.push(helpers['style'])
+            if (typeof minimist.modules !== 'undefined' || typeof minimist.m !== 'undefined') {
+                modules = minimist.modules || minimist.m
+                modules = modules.split('\,')
+                for (const iterator of modules) {
+                    if (iterator == 'text' || iterator == 'val' || iterator == 'css' || iterator == 'height' || iterator == 'width') {
+                        if (!src.includes(helpers['undefined'])) {
+                            src.push(helpers['undefined'])
+                        }
+                    }
+                    if (iterator == 'css' || iterator == 'height' || iterator == 'width') {
+                        if (!src.includes(helpers['style'])) {
+                            src.push(helpers['style'])
+                        }
+                    }
+                    if (typeof components[iterator] !== "undefined") {
+                        src.push(components[iterator])
+                    }
                 }
+            } else {
+                modules = src
             }
-            if (typeof components[iterator] !== "undefined") {
-                src.push(components[iterator])
-            }
-        }
-    } else {
-        modules = src
-    }
-    gulp.src(src).pipe(concat('tiny.js')).pipe(gif(typeof minimist.env == 'undefined', beautify(), uglify())).on('error', function (err) {
-        util.log(err.toString());
-    }).pipe(gulp.dest('dist/'))
-});
+            gulp.src(src).pipe(concat('tiny.js')).pipe(babel()).pipe(gif(typeof minimist.env == 'undefined', beautify(), uglify())).on('error', function (err) {
+                    util.log(err.toString());
+                }).pipe(gulp.dest('dist/'))
+            });
