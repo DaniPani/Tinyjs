@@ -16,7 +16,7 @@ I wanted something smaller and smarter than Jquery and this how Tinyjs was born.
 
 ## Why Tinyjs?
 
-- Insanly small (**~1375 bytes**)
+- Insanly small ![File Size Gzip](http://img.badgesize.io/DaniPani/Tinyjs/master/dist/tiny.js?compression=gzip)
 - Fast
 - Doesn't slow down the loading page
 - [It's super modular](#components)
