@@ -10,5 +10,5 @@ $.all = (selector) => {
     return $
 }
 $.save = () => {
-    return Object.assign({}, $)
+    return {Object.assign({}, $)}
 }

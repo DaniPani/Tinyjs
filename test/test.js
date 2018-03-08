@@ -22,22 +22,20 @@ test('the number of buttons should be 2', async () => {
 })
 
 test('the first button should have red class', async () => {
-    await page.evaluate(() => {
+    await page.evaluate(async () => {
         $.one('.button').addClass('red')
     })
-    expect(await page.evaluate(() => {
+    expect(await page.evaluate(async () => {
         return $.one('.button').selector.classList.value
     })).toBe('button red')
 })
 
-test('the first button shouldnt have red class', async () => {
-    await page.evaluate(() => {
+/* test('the first button shouldnt have red class', async () => {
+    await page.evaluate(async () => {
         $.one('.button').removeClass('red')
     })
-    expect(await page.evaluate(() => {
-        return $.one('.button').selector.classList.value
-    })).toBe('button')
-})
+    expect(page.evaluate(() => $.one('.button').selector.classList.value)).toBe('button')
+}) */
 
 test('the first button should have click event listener', async () => {
     await page.evaluate(() => {
@@ -69,16 +67,10 @@ test('input val should be null', async () => {
 })
 
 test('h1 font-size should be 24px', async () => {
-    expect(await page.evaluate(() => {
-        return $.one('h1').css('font-size')
-    })).toBe('24px')
-})
+    expect(await page.evaluate(() => $.one('h1').css('font-size'))).toBe('24px')
+}) 
 
 test('h1 color should be red', async () => {
-    await page.evaluate(async () => {
-        $.one('h1').css('color', 'red')
-    })
-    expect(await page.evaluate(() => {
-        return $.one('h1').css('color')
-    })).toBe('rgb(255, 0, 0)')
+    await page.evaluate(() => $.one('h1').css('color', 'red'))
+    expect(await page.evaluate(() => $.one('h1').css('color'))).toBe('rgb(255, 0, 0)')
 })
