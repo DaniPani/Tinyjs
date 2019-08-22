@@ -10,7 +10,7 @@
   "author": "Daniel Panero",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "6.26.0",
+    "babel-core": "6.26.3",
     "babel-preset-es2017": "6.24.1",
     "babelify": "8.0.0",
     "gulp": "3.9.1",
