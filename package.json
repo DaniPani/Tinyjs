@@ -19,7 +19,7 @@
     "gulp-if": "2.0.2",
     "gulp-print": "5.0.0",
     "gulp-rename": "1.2.2",
-    "gulp-uglify": "3.0.0",
+    "gulp-uglify": "3.0.2",
     "gulp-uglify-es": "1.0.0",
     "gulp-util": "3.0.8",
     "jest": "22.2.2",
