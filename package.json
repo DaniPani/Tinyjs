@@ -29,6 +29,6 @@
   },
   "dependencies": {
     "babel-preset-env": "^1.6.1",
-    "gulp-babel": "^7.0.1"
+    "gulp-babel": "^8.0.0"
   }
 }
