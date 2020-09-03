@@ -24,7 +24,7 @@
     "gulp-util": "3.0.8",
     "jest": "22.2.2",
     "minimist": "1.2.0",
-    "puppeteer": "1.0.0",
+    "puppeteer": "1.13.0",
     "uglify-es": "3.3.10"
   },
   "dependencies": {
